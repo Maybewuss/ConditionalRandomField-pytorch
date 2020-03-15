@@ -255,7 +255,7 @@ def allowed_transitions(constraint_type: str, labels: Dict[str, int]) -> List[Tu
 
     constraint_type : `str`, required
         Indicates which constraint to apply. Current choices are
-        "BIO", "IOB1", "BIOUL", and "BMES".
+        "BIO" and "BIOUL".
     labels : `Dict[int, str]`, required
         A mapping {label_id -> label}. Most commonly this would be the value from
         Vocabulary.get_index_to_token_vocabulary()
