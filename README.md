@@ -11,7 +11,7 @@ Difference with Allennlp is I discard top-k viterbi decode.
 
 ```
 from ConditionalRandomField import ConditionalRandomField, allowed_transitions
-
+# support only bioul and bio
 label_dic = {'O':0, 'B-a':1, 'I-a':2, 'O-a':3, 'U-a':4, 'L-a':5, 'U-b':6}
 constraints = allowed_transitions(constraint_type='BIOUL', labels=label_dic)
 crf = ConditionalRandomField(num_tags=len(label_dic), constraints=constraints)
